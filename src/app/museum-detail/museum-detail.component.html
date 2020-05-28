@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-6">
+    <div class="map-container">
+      <div class="map-frame">
+        <div id="map">
+          <app-map [coordinates]="museum.coordinates"></app-map>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title mb-2">🏦 {{museum.name}}</h5>
+        <p class="card-text"> 📍 {{museum.city}}</p>
+        <p class="card-text"> {{museum.cp}}</p>
+        <p class="card-text"> 🛣️ {{museum.address}}</p>
+        <p class="card-text"> 📞 {{museum.telephone}}</p>
+        <p class="card-text" [ngIf]=> 📞 {{museum.fax}}</p>
+        <p class="card-text">ℹ️ {{museum.opening}} </p>
+        <a href="#" class="card-link">🌐 {{museum.website}}</a>
+
+      </div>
+    </div>
+    <p><a routerLink=""> 👈 Back to the museums</a></p>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col mt-2">
+
+  </div>
+</div>
+<!-- {{ nameMuseum}}
+📍 {{ cityMuseum}}
+{{ adressMuseum}}
+📞 {{ numberMuseum}}
+{{websiteMuseum}} -->
